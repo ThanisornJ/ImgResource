@@ -117,7 +117,7 @@ WORKDIR /var/www/html
 
 # Copy built assets and SSL certificates first
 COPY --from=composer /app/vendor ./vendor
-COPY --from=frontend-builder /app/public/build ./public/build
+# COPY --from=frontend-builder /app/public/build ./public/build
 COPY --from=ssl /etc/nginx/cert.* /etc/nginx/
 
 # Copy application code (excluding node_modules and build artifacts)
