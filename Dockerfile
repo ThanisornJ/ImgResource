@@ -79,7 +79,7 @@ ENV APP_NAME="OOU Navigation" \
     VITE_APP_NAME="OOU Navigation" \
     NODE_ENV=production
 
-RUN pnpm run build
+# RUN pnpm run build
 
 # Stage 5: PHP Application
 FROM php:8.4-fpm-alpine3.20 AS php
